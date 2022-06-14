@@ -12,20 +12,20 @@ public class Livre {
     public Livre() {
     }
 
-    public Livre(String titre, int nbPages, long isbn) {
+    public Livre(final String titre, final int nbPages, final long isbn) {
         this.titre = titre;
         this.nbPages = nbPages;
         this.isbn = isbn;
     }
 
-    public Livre(String titre, String auteur, int nbPages, long isbn) {
+    public Livre(final String titre, final String auteur, final int nbPages, final long isbn) {
         this.titre = titre;
         this.auteur = auteur;
         this.nbPages = nbPages;
         this.isbn = isbn;
     }
 
-    public Livre(String titre, String auteur, int nbPages, long isbn, int prix) {
+    public Livre(final String titre, final String auteur, final int nbPages, final long isbn, final int prix) {
         this.titre = titre;
         this.auteur = auteur;
         this.nbPages = nbPages;
@@ -33,7 +33,7 @@ public class Livre {
         this.prix = prix;
     }
 
-    public Livre(String titre, String auteur, int nbPages, long isbn, int annee, int prix) {
+    public Livre(final String titre, final String auteur, final int nbPages, final long isbn, final int annee, final int prix) {
         this.titre = titre;
         this.auteur = auteur;
         this.nbPages = nbPages;
@@ -46,7 +46,7 @@ public class Livre {
         return titre;
     }
 
-    public void setTitre(String titre) {
+    public void setTitre(final String titre) {
         this.titre = titre;
     }
 
@@ -54,7 +54,7 @@ public class Livre {
         return auteur;
     }
 
-    public void setAuteur(String auteur) {
+    public void setAuteur(final String auteur) {
         this.auteur = auteur;
     }
 
@@ -62,7 +62,7 @@ public class Livre {
         return nbPages;
     }
 
-    public void setNbPages(int nbPages) {
+    public void setNbPages(final int nbPages) {
         this.nbPages = nbPages;
     }
 
@@ -70,7 +70,7 @@ public class Livre {
         return isbn;
     }
 
-    public void setIsbn(long isbn) {
+    public void setIsbn(final long isbn) {
         this.isbn = isbn;
     }
 
@@ -78,7 +78,7 @@ public class Livre {
         return annee;
     }
 
-    public void setAnnee(int annee) {
+    public void setAnnee(final int annee) {
         this.annee = annee;
     }
 
@@ -86,17 +86,14 @@ public class Livre {
         return prix;
     }
 
-    public void setPrix(int prix) {
+    public void setPrix(final int prix) {
         this.prix = prix;
     }
 
     @Override
     public String toString() {
-        return "Livre{" + "titre=" + titre + ", auteur=" + auteur + ", nbPages=" + nbPages + ", isbn=" + isbn + ", annee=" + annee + ", prix=" + prix + '}';
+        return "Livre{" + "titre=" + titre + ", auteur=" + auteur + ", nbPages=" + nbPages + ", isbn=" + isbn
+                + ", annee=" + annee + ", prix=" + prix + '}';
     }
-
-    
-
-    
 
 }
