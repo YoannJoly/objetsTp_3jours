@@ -10,6 +10,7 @@ public class Livre {
     private int prix;
 
     public Livre() {
+        super();
     }
 
     public Livre(final String titre, final int nbPages, final long isbn) {
@@ -40,6 +41,15 @@ public class Livre {
         this.isbn = isbn;
         this.annee = annee;
         this.prix = prix;
+    }
+
+    public Livre(Livre livre) {
+        this.titre = livre.titre;
+        this.auteur = livre.auteur;
+        this.nbPages = livre.nbPages;
+        this.isbn = livre.isbn;
+        this.annee = livre.annee;
+        this.prix = livre.prix;
     }
 
     public String getTitre() {
