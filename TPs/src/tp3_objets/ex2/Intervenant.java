@@ -8,9 +8,9 @@ public class Intervenant {
     public Intervenant() {
     }
 
-    public Intervenant(String leNom, double leTauxHoraire) {
-        nom = leNom;
-        tauxHoraire = (int) leTauxHoraire;
+    public Intervenant(final String nom, final double tauxHoraire) {
+        this.nom = nom;
+        this.tauxHoraire = (int) tauxHoraire;
     }
 
     public double getTauxHoraire() {

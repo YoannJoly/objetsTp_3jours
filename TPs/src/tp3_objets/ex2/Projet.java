@@ -4,17 +4,17 @@ import java.util.Date;
 
 public class Projet {
 
-    private String nom;
-    private Date debut;
-    private Date fin;
-    private int prixFacturéMO;
+    private final String nom;
+    private final Date debut;
+    private final Date fin;
+    private final int prixFacturéMO;
 
-    public Projet(String nom, Date debut, Date fin, int prixFacturéMO) {
+    public Projet(final String nom, final Date debut, final Date fin, final int prixFacturéMO) {
         this.nom = nom;
         this.debut = debut;
         this.fin = fin;
         this.prixFacturéMO = prixFacturéMO;
-    }    
+    }
 
     int cummulCoutMO() {
         return (int) ((fin.getTime() - debut.getTime()) / (1000 * 60 * 60 * 24)) * prixFacturéMO;
