@@ -20,7 +20,7 @@ public class Individu {
         this.nom = nom;
     }
 
-    public Individu(final String prenom, final String nom) { //
+    public Individu(final String prenom, final String nom) { 
         this.nom = nom;
         this.prenom = prenom;
     }
