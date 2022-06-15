@@ -16,7 +16,7 @@ public class pompeAGravitation extends Machine {
 
     @Override
     public String toString() {
-        return "pompeAGravitation (" + debit + "L) " + super.toString();
+        return "Pompe à gravitation (" + debit + "L/min) " + "Eau: " + eauOperationelle + " " + super.toString();
     }
 
 }
