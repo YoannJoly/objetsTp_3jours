@@ -1,24 +1,15 @@
-package tp4_plan;
+package tp4_plan.ex4;
 
 import java.awt.*;
 
-
 public class Terrasse extends Emplacement {
-    
-    public Terrasse(Color couleur, int xCentre, int yCentre) {
-        super( couleur, xCentre, yCentre);
+
+    public Terrasse(final Color couleur, final int xCentre, final int yCentre) {
+        super(couleur, xCentre, yCentre);
     }
 
     public String affiche() {
         return "Terrasse" + "Couleur=" + getCouleur() + ", xCentre=" + getxCentre() + ", yCentre=" + getyCentre();
     }
 
- 
-    
-   
-    
 }
-
-
-    
-

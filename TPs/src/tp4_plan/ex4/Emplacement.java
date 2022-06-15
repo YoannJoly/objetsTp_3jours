@@ -1,4 +1,4 @@
-package tp4_plan;
+package tp4_plan.ex4;
 
 import java.awt.*;
 
@@ -9,10 +9,10 @@ abstract class Emplacement {
     private int xCentre;
     private int yCentre;
 
-    protected Emplacement(Color couleur , int xCentre , int yCentre ) {
-        this.couleur = couleur ;
-        this.xCentre = xCentre ;
-        this.yCentre = yCentre ;
+    protected Emplacement(final Color couleur, final int xCentre, final int yCentre) {
+        this.couleur = couleur;
+        this.xCentre = xCentre;
+        this.yCentre = yCentre;
     }
 
     abstract String affiche();
@@ -21,7 +21,7 @@ abstract class Emplacement {
         return dimension;
     }
 
-    public void setDimension(int dimension) {
+    public void setDimension(final int dimension) {
         this.dimension = dimension;
     }
 
@@ -29,7 +29,7 @@ abstract class Emplacement {
         return couleur;
     }
 
-    public void setCouleur(Color couleur) {
+    public void setCouleur(final Color couleur) {
         this.couleur = couleur;
     }
 
@@ -37,7 +37,7 @@ abstract class Emplacement {
         return xCentre;
     }
 
-    public void setxCentre(int xCentre) {
+    public void setxCentre(final int xCentre) {
         this.xCentre = xCentre;
     }
 
@@ -45,10 +45,8 @@ abstract class Emplacement {
         return yCentre;
     }
 
-    public void setyCentre(int yCentre) {
+    public void setyCentre(final int yCentre) {
         this.yCentre = yCentre;
     }
-
-        
 
 }
